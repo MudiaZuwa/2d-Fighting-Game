@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="display: none; width: 1024px" id="controlMenu">
+      <select
+        required
+        style="width: 100%; font-size: 16px"
+        id="playerControls"
+      ></select>
+      <select
+        required
+        style="width: 100%; font-size: 16px"
+        id="enemyControls"
+      ></select>
+    </div>
+    <div>
+      <div class="parent">
+        <div class="child">
+          <!--Player Health-->
+          <div class="PlayerParent">
+            <div class="Playerhealth"></div>
+            <div class="PlayerChild" id="playerHealth"></div>
+          </div>
+          <!--Timer-->
+          <div class="timer" id="timer">60</div>
+          <!--Enemy Health-->
+          <div class="EnemyParent">
+            <div class="Enemyhealth"></div>
+            <div class="EnemyChild" id="enemyHealth"></div>
+          </div>
+        </div>
+        <div class="displayText" id="displayText">Tie</div>
+        <canvas></canvas>
+      </div>
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/gamepadInput.js"></script>
+    <script src="js/keyInput.js"></script>
+    <script src="js/Players.js"></script>
+    <script src="js/GameControl.js"></script>
+    <script src="index.js"></script>
+    <script src="js/ComputerAi.js"></script>
+  </body>
+</html>
